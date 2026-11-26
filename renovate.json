@@ -5,6 +5,10 @@
   "rebaseWhen": "conflicted",
   "packageRules": [
     {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
       "groupName": "renovate",
       "matchPackageNames": ["ghcr.io/renovatebot/renovate", "renovatebot/github-action"]
     }
